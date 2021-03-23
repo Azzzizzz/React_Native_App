@@ -29,6 +29,8 @@ export default function App() {
         flexDirection: "row",
         justifyContent: "center", // Main(primary-axis)
         alignItems: "center", // Secodnary
+        alignContent: "center", //it deals with the entire content
+        flexWrap: "wrap",
       }}
     >
       <View
@@ -37,7 +39,6 @@ export default function App() {
           // flex: 1,
           width: 100,
           height: 100,
-          alignSelf: "flex-start", //for  alignment of individual item
         }}
       />
       <View
@@ -51,6 +52,22 @@ export default function App() {
       <View
         style={{
           backgroundColor: "tomato",
+          // flex: 1,
+          width: 100,
+          height: 100,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "teal",
+          // flex: 1,
+          width: 100,
+          height: 100,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "gray",
           // flex: 1,
           width: 100,
           height: 100,
