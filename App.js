@@ -27,6 +27,8 @@ export default function App() {
         backgroundColor: "#fff",
         flex: 1,
         flexDirection: "row",
+        justifyContent: "center", // Main(primary-axis)
+        alignItems: "center", // Secodnary
       }}
     >
       <View
@@ -35,6 +37,7 @@ export default function App() {
           // flex: 1,
           width: 100,
           height: 100,
+          alignSelf: "flex-start", //for  alignment of individual item
         }}
       />
       <View
