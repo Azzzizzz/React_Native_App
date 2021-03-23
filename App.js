@@ -22,24 +22,37 @@ export default function App() {
   const { landscape } = useDeviceOrientation();
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View
+      style={{
+        backgroundColor: "#fff",
+        flex: 1,
+        flexDirection: "row",
+      }}
+    >
       <View
         style={{
           backgroundColor: "dodgerblue",
-          width: "100%",
-          height: landscape ? "100%" : "30%",
+          // flex: 1,
+          width: 100,
+          height: 100,
         }}
-      ></View>
-    </SafeAreaView>
+      />
+      <View
+        style={{
+          backgroundColor: "gold",
+          // flex: 1,
+          width: 100,
+          height: 100,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "tomato",
+          // flex: 1,
+          width: 100,
+          height: 100,
+        }}
+      />
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    // alignItems: "center",
-    // justifyContent: "center",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
