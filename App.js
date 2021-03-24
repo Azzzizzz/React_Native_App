@@ -17,62 +17,23 @@ import {
   useDeviceOrientation,
   useDimensions,
 } from "@react-native-community/hooks";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
+
+import AppText from "./app/components/AppText";
 
 export default function App() {
-  const { landscape } = useDeviceOrientation();
-
   return (
+    // <ViewImageScreen />
+    // <WelcomeScreen />
     <View
       style={{
-        backgroundColor: "#fff",
         flex: 1,
-        flexDirection: "row",
-        justifyContent: "center", // Main(primary-axis)
-        alignItems: "center", // Secodnary
-        alignContent: "center", //it deals with the entire content
-        flexWrap: "wrap",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      <View
-        style={{
-          backgroundColor: "dodgerblue",
-          // flex: 1,
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "gold",
-          // flex: 1,
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "tomato",
-          // flex: 1,
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "teal",
-          // flex: 1,
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "gray",
-          // flex: 1,
-          width: 100,
-          height: 100,
-        }}
-      />
+      <AppText>I Love React Native</AppText>
     </View>
   );
 }
