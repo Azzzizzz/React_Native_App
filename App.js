@@ -19,8 +19,7 @@ import {
 } from "@react-native-community/hooks";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
-
-import AppText from "./app/components/AppText";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function App() {
   return (
@@ -33,7 +32,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <AppText>I Love React Native</AppText>
+      <MaterialCommunityIcons name="email" size={100} color="dodgerblue" />
     </View>
   );
 }
